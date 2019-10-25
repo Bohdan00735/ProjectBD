@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         override fun onFinish() {
             val intent = Intent("android.intent.action.main_act")
             startActivity(intent)
+            finish()
+            overridePendingTransition(R.anim.appear, R.anim.disappear)
         }
     }
 
